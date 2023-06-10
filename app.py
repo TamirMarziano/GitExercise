@@ -32,15 +32,14 @@ def contact():
 def contact():
     return "You can chat with live agent!"
 
+@app.route("/services")
+def services():
+    return "We offer the following services: web development, data analysis, SEO."
+
 
 @app.route("/internal")
 def home():
     return "System management portal"
-
-
-@app.route("/services")
-def services():
-    return "We offer the following services: web development, data analysis, SEO."
 
 
 if __name__ == "__main__":
